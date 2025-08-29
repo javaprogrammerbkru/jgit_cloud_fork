@@ -20,4 +20,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build and deploy with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn clean deploy -Dregistry=https://maven.pkg.github.com/javaprogrammerbkru/jgit_cloud_fork -Dtoken=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 --file pom.xml
